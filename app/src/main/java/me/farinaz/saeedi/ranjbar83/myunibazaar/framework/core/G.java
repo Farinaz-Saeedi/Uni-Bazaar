@@ -25,6 +25,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
 
 import me.farinaz.saeedi.ranjbar83.myunibazaar.R;
 public class G extends Application {
@@ -42,6 +43,8 @@ public class G extends Application {
     public static  String DB_DIR ;
     public static  String DATABASE_NAME = "uni_bazaar.db";
     public static  String DB_PATH = "";
+
+    public static ArrayList<User> arrayListUser = new ArrayList<>();
 
     @Override
     public void onCreate() {
