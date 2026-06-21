@@ -28,6 +28,12 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 
 import me.farinaz.saeedi.ranjbar83.myunibazaar.R;
+import me.farinaz.saeedi.ranjbar83.myunibazaar.framework.struct.DiscountCode;
+import me.farinaz.saeedi.ranjbar83.myunibazaar.framework.struct.Product;
+import me.farinaz.saeedi.ranjbar83.myunibazaar.framework.struct.Request;
+import me.farinaz.saeedi.ranjbar83.myunibazaar.framework.struct.Store;
+import me.farinaz.saeedi.ranjbar83.myunibazaar.framework.struct.Support;
+import me.farinaz.saeedi.ranjbar83.myunibazaar.framework.struct.SupportOperation;
 import me.farinaz.saeedi.ranjbar83.myunibazaar.framework.struct.User;
 
 public class G extends Application {
@@ -46,7 +52,14 @@ public class G extends Application {
     public static  String DATABASE_NAME = "uni_bazaar.db";
     public static  String DB_PATH = "";
 
+    // ArrayList
     public static ArrayList<User> arrayListUser = new ArrayList<>();
+    public static ArrayList<DiscountCode> arrayListDiscountCode = new ArrayList<>();
+    public static ArrayList<Request> arrayListRequest = new ArrayList<>();
+    public static ArrayList<Support> arrayListSupport = new ArrayList<>();
+    public static ArrayList<Product> arrayListProduct = new ArrayList<>();
+    public static ArrayList<SupportOperation> arrayListSupportOperation = new ArrayList<>();
+    public static ArrayList<Store> arrayListStore = new ArrayList<>();
 
     @Override
     public void onCreate() {
