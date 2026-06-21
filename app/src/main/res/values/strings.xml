@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">MyUniBazaar</string>
+    <string name="app_name">Uni Bazaar</string>
+
+    <string name="main_user_list">Users</string>
+    <string name="main_support_list">Supports</string>
+    <string name="main_read_me">About</string>
+    <string name="main_exit">Exit</string>
+
+
+    <string name="font1">fonts/IRANSansMobile_Medium.ttf</string>
+    <string name="font2">fonts/IRANSansMobile_Bold.ttf</string>
+    <string name="font3">fonts/IRANSansMobile_UltraLight.ttf</string>
+    <string name="titleAdapter">fonts/Beautiful Garden.ttf</string>
+    <string name="fontTitle">fonts/PoetsenOne-Regular.ttf</string>
+    <string name="fontNumberPrice">fonts/orange juice.ttf</string>
+    <string name="fontNumberPersent">fonts/orange juice.ttf</string>
+    <string name="fontRequest">fonts/Blishfully Sans.ttf</string>
+    <string name="fontNumber">fonts/Beautiful Garden.ttf</string>
 </resources>

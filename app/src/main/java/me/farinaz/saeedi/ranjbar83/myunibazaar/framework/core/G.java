@@ -1,0 +1,66 @@
+package me.farinaz.saeedi.ranjbar83.myunibazaar.framework.core;
+
+import android.app.Activity;
+import android.app.Application;
+import android.content.Context;
+import android.database.sqlite.SQLiteDatabase;
+import android.graphics.Typeface;
+import android.os.Handler;
+import android.transition.TransitionInflater;
+import android.util.DisplayMetrics;
+import android.view.LayoutInflater;
+
+import me.farinaz.saeedi.ranjbar83.myunibazaar.R;
+public class G extends Application {
+    public static Typeface font1, font2, font3, fontRequest, fontTitle, fontNumber, fontNumberPrice, titleAdapter, fontNumberPercent;
+
+    private static Context context;
+    private static Activity currentActivity;
+    private static LayoutInflater layoutInflater;
+    private static TransitionInflater transitionInflater;
+    private static Handler handler;
+    private static DisplayMetrics displayMetrics;
+    private static G app;
+
+
+    @Override
+    public void onCreate() {
+        super.onCreate();
+
+        app = this;
+        context = getApplicationContext();
+        handler = new Handler();
+        displayMetrics = getResources().getDisplayMetrics();
+        layoutInflater = LayoutInflater.from(context);
+        transitionInflater = TransitionInflater.from(context);
+
+
+
+        fontSet();
+    }
+
+    private void fontSet() {
+
+        // Fonts
+        font1 = Typeface.createFromAsset(G.getContext().getAssets(),getString(R.string.font1) );
+        font2 = Typeface.createFromAsset(G.getContext().getAssets(), getString(R.string.font2));
+        font3 = Typeface.createFromAsset(G.getContext().getAssets(), getString(R.string.font3));
+        fontRequest = Typeface.createFromAsset(G.getContext().getAssets(), getString(R.string.fontRequest));
+        fontNumber = Typeface.createFromAsset(G.getContext().getAssets(), getString(R.string.fontNumber));
+        titleAdapter = Typeface.createFromAsset(G.getContext().getAssets(), getString(R.string.titleAdapter));
+        fontTitle = Typeface.createFromAsset(G.getContext().getAssets(), getString(R.string.fontTitle));
+        fontNumberPrice = Typeface.createFromAsset(G.getContext().getAssets(), getString(R.string.fontNumberPrice));
+        fontNumberPercent = Typeface.createFromAsset(G.getContext().getAssets(), getString(R.string.fontNumberPersent));
+    }
+
+    public static Context getContext(){
+        if(currentActivity != null){
+            return currentActivity;
+        }
+        return context;
+    }
+    public static G get(){
+        return app;
+    }
+
+}
