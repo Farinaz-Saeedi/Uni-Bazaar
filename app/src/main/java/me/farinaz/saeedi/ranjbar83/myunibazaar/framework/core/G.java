@@ -21,7 +21,10 @@ import androidx.annotation.Nullable;
 import androidx.annotation.TransitionRes;
 
 import java.io.File;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 
 import me.farinaz.saeedi.ranjbar83.myunibazaar.R;
 public class G extends Application {
@@ -157,6 +160,49 @@ public class G extends Application {
         }
 
         return exists;
+    }
+    public static void copyDataBase() throws IOException {
+        InputStream myInput = null;
+        OutputStream myOutput = null;
+
+        try {
+            myInput = context.getAssets().open(DATABASE_NAME);
+
+            String outFileName = DB_PATH + DATABASE_NAME;
+            myOutput = new FileOutputStream(outFileName);
+
+            byte[] buffer = new byte[1024];
+            int length;
+            int totalRead = 0;
+
+            while ((length = myInput.read(buffer)) > 0) {
+                myOutput.write(buffer, 0, length);
+                totalRead += length;
+            }
+
+            Log.d(TAG, "Copy completed: " + totalRead);
+
+        } catch (IOException e) {
+            Log.e(TAG, "ERROR: " + e.getMessage());
+            throw e;
+        } finally {
+            try {
+                if (myOutput != null) {
+                    myOutput.flush();
+                    myOutput.close();
+                }
+            } catch (IOException e) {
+                Log.e(TAG, "ERROR: " + e.getMessage());
+            }
+
+            try {
+                if (myInput != null) {
+                    myInput.close();
+                }
+            } catch (IOException e) {
+                Log.e(TAG, "ERROR: " + e.getMessage());
+            }
+        }
     }
 
 }
