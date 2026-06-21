@@ -28,6 +28,8 @@ import java.io.OutputStream;
 import java.util.ArrayList;
 
 import me.farinaz.saeedi.ranjbar83.myunibazaar.R;
+import me.farinaz.saeedi.ranjbar83.myunibazaar.framework.struct.User;
+
 public class G extends Application {
     public static Typeface font1, font2, font3, fontRequest, fontTitle, fontNumber, fontNumberPrice, titleAdapter, fontNumberPercent;
 
