@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyUniBazaar">
         <activity
-            android:name=".frameworkstartup.main.MainActivity"
+            android:name=".frameworkstartup.main.ActivityMain"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

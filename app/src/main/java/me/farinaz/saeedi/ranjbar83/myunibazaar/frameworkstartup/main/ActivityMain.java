@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import me.farinaz.saeedi.ranjbar83.myunibazaar.R;
 
-public class MainActivity extends AppCompatActivity {
+public class ActivityMain extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
