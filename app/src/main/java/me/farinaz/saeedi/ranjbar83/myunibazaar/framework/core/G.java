@@ -54,7 +54,7 @@ public class G extends Application {
         layoutInflater = LayoutInflater.from(context);
         transitionInflater = TransitionInflater.from(context);
 
-
+        DB_PATH = context.getApplicationInfo().dataDir + "/databases/";
 
         fontSet();
     }
