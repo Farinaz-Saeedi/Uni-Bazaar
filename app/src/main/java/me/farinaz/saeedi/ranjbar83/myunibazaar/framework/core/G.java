@@ -20,6 +20,7 @@ import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 import androidx.annotation.TransitionRes;
 
+import java.io.File;
 import java.io.IOException;
 
 import me.farinaz.saeedi.ranjbar83.myunibazaar.R;
@@ -143,6 +144,19 @@ public class G extends Application {
             copyDataBase();
             return true;
         }
+    }
+    public static boolean checkDataBase() {
+        File dbFile = new File(DB_PATH + DATABASE_NAME);
+        boolean exists = dbFile.exists();
+        Log.d(TAG, "Check database in " + DB_PATH + DATABASE_NAME + ": " + exists);
+
+
+        if (exists) {
+            long fileSize = dbFile.length();
+            Log.d(TAG, "Size of db file: " + fileSize + "byte.");
+        }
+
+        return exists;
     }
 
 }
