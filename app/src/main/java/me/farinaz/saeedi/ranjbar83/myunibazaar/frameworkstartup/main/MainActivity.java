@@ -1,4 +1,4 @@
-package me.farinaz.saeedi.ranjbar83.myunibazaar;
+package me.farinaz.saeedi.ranjbar83.myunibazaar.frameworkstartup.main;
 
 import android.os.Bundle;
 
@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+
+import me.farinaz.saeedi.ranjbar83.myunibazaar.R;
 
 public class MainActivity extends AppCompatActivity {
 
