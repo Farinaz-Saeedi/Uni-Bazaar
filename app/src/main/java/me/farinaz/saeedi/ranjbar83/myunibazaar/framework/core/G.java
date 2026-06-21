@@ -204,5 +204,24 @@ public class G extends Application {
             }
         }
     }
+    public static SQLiteDatabase openDataBase() {
+        try {
+            String myPath = DB_PATH + DATABASE_NAME;
+            File dbFile = new File(myPath);
+
+            if (!dbFile.exists()) {
+                Log.e(TAG, "db file not exist " + myPath);
+                return null;
+            }
+
+            database = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READWRITE);
+            Log.d(TAG, "Database open successfully");
+            return database;
+        } catch (Exception e) {
+            Log.e(TAG, "ERROR: " + e.getMessage());
+            e.printStackTrace();
+            return null;
+        }
+    }
 
 }
