@@ -6,9 +6,16 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Typeface;
 import android.os.Handler;
+import android.transition.Transition;
 import android.transition.TransitionInflater;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+
+import androidx.annotation.LayoutRes;
+import androidx.annotation.Nullable;
+import androidx.annotation.TransitionRes;
 
 import me.farinaz.saeedi.ranjbar83.myunibazaar.R;
 public class G extends Application {
@@ -21,6 +28,7 @@ public class G extends Application {
     private static Handler handler;
     private static DisplayMetrics displayMetrics;
     private static G app;
+
 
 
     @Override
@@ -61,6 +69,34 @@ public class G extends Application {
     }
     public static G get(){
         return app;
+    }
+
+    public static void setCurrentActivity(Activity activity){
+        currentActivity = activity;
+    }
+    public static Activity getCurrentActivity(){
+        return currentActivity;
+    }
+    public static LayoutInflater getLayoutInflater(){
+        return layoutInflater;
+    }
+    public static TransitionInflater gettransitionInflater(){
+        return transitionInflater;
+    }
+    public static View layoutInflate(@LayoutRes int res){
+        return layoutInflater.inflate(res, null);
+    }
+    public static View layoutInflate(@LayoutRes int res, @Nullable ViewGroup root){
+        return layoutInflater.inflate(res, root);
+    }
+    public static Transition transitionInflate(@TransitionRes int res){
+        return transitionInflater.inflateTransition(res);
+    }
+    public static Handler getHandler(){
+        return handler;
+    }
+    public  static DisplayMetrics getDisplayMetrics(){
+        return displayMetrics;
     }
 
 }
