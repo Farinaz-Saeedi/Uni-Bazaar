@@ -124,5 +124,25 @@ public class G extends Application {
             e.printStackTrace();
         }
     }
+    public static boolean createDataBase() throws IOException {
+
+        boolean dbExist = checkDataBase();
+        if (dbExist) {
+            Log.d(TAG, "Database already exists: " + DB_PATH + DATABASE_NAME);
+            return false;
+        } else {
+            File dbDir = new File(DB_PATH);
+            if (!dbDir.exists()) {
+                boolean created = dbDir.mkdirs();
+                Log.d(TAG, "Database folder was created " + created);
+                if (!created) {
+                    throw new IOException("Can not created database folder");
+                }
+            }
+
+            copyDataBase();
+            return true;
+        }
+    }
 
 }
