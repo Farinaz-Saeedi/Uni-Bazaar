@@ -1,5 +1,7 @@
 package me.farinaz.saeedi.ranjbar83.myunibazaar.framework.core;
 
+import static android.content.ContentValues.TAG;
+
 import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
@@ -9,6 +11,7 @@ import android.os.Handler;
 import android.transition.Transition;
 import android.transition.TransitionInflater;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +19,8 @@ import android.view.ViewGroup;
 import androidx.annotation.LayoutRes;
 import androidx.annotation.Nullable;
 import androidx.annotation.TransitionRes;
+
+import java.io.IOException;
 
 import me.farinaz.saeedi.ranjbar83.myunibazaar.R;
 public class G extends Application {
@@ -29,7 +34,10 @@ public class G extends Application {
     private static DisplayMetrics displayMetrics;
     private static G app;
 
-
+    public static SQLiteDatabase database;
+    public static  String DB_DIR ;
+    public static  String DATABASE_NAME = "uni_bazaar.db";
+    public static  String DB_PATH = "";
 
     @Override
     public void onCreate() {
@@ -97,6 +105,24 @@ public class G extends Application {
     }
     public  static DisplayMetrics getDisplayMetrics(){
         return displayMetrics;
+    }
+
+    public static void copyDatabaseIfNeeded() {
+        try {
+            boolean result = createDataBase();
+
+            if (result) {
+                Log.d(TAG, "Database copied successfully");
+            } else {
+                Log.d(TAG, "Database already exists");
+            }
+
+            openDataBase();
+
+        } catch (IOException e) {
+            Log.e(TAG, "ERROR: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
 }
