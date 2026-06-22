@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_recommend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".frameworkstartup.discount.ActivityDiscountCodeList">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_discount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/primary"
+        android:minHeight="?attr/actionBarSize"
+        app:navigationIcon="@drawable/abc_ic_ab_back_material"
+        app:title="My Discounts"
+        app:titleTextColor="@android:color/white" />
+
+    <ListView
+        android:id="@+id/list_code"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        android:layout_weight="0.95"
+        android:background="@color/background"
+        android:divider="@color/transparentfsr"
+        android:dividerHeight="12dp"
+        tools:listitem="@layout/adapter_discount_code" />
+
+</LinearLayout>
