@@ -1,7 +1,10 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MyUniBazaar" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.UniBazaar" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <!-- Status bar color. -->
+
+        <!-- Customize other theme attributes here -->
     </style>
 </resources>
