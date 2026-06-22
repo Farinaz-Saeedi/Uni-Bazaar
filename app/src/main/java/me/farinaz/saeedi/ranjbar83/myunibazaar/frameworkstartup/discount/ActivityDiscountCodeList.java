@@ -11,7 +11,6 @@ import me.farinaz.saeedi.ranjbar83.myunibazaar.R;
 import java.util.ArrayList;
 
 
-
 public abstract class ActivityDiscountCodeList<T> extends ArrayAdapter<T> {
     private LayoutInflater inflater;
 

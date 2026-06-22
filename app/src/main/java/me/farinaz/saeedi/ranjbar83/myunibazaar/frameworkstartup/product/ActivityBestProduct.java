@@ -30,7 +30,6 @@ public class ActivityBestProduct extends AppCompatActivity {
             return insets;
         });
 
-
         Toolbar toolbar = findViewById(R.id.toolbar_best);
         setSupportActionBar(toolbar);
         ActionBar actionBar = getSupportActionBar();

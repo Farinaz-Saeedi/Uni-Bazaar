@@ -30,14 +30,11 @@ public class ActivityUser extends AppCompatActivity {
             return insets;
         });
 
-
         ListView listUsers = findViewById(R.id.list_support);
-
 
         DatabaseUserList.getData();
         AdapterUserList adapter = new AdapterUserList(this, G.arrayListUser);
         listUsers.setAdapter(adapter);
-
 
         Toolbar toolbar = findViewById(R.id.toolbar_user);
         setSupportActionBar(toolbar);
@@ -53,10 +50,5 @@ public class ActivityUser extends AppCompatActivity {
                 onBackPressed();
             }
         });
-
-
-
     }
-
-
 }

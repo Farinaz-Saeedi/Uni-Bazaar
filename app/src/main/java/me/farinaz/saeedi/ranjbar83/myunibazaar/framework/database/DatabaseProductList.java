@@ -37,9 +37,6 @@ public class DatabaseProductList extends SQLiteOpenHelper {
     }
 
 
-
-
-
     public static void getViewedProducts(int userId) {
         G.arrayListProduct.clear();
 
@@ -125,10 +122,6 @@ public class DatabaseProductList extends SQLiteOpenHelper {
             G.arrayListProduct.add(data);
         }
         cursor.close();
-
-//        for (int i = 0; i < G.arrayListProduct.size(); i++) {
-//            Log.i("FSR", "getData: "+ G.arrayListProduct.get(i).getImage() + " " +G.arrayListProduct.get(i).getTitle() + " " + G.arrayListProduct.get(i).getPrice());
-//        }
     }
 
 }

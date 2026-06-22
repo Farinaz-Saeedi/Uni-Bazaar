@@ -50,7 +50,5 @@ public class ActivitySupport extends AppCompatActivity {
         DatabaseSupportList.getData();
         AdapterSupportList adapter = new AdapterSupportList(this, G.arrayListSupport);
         listSupport.setAdapter(adapter);
-
-
     }
 }

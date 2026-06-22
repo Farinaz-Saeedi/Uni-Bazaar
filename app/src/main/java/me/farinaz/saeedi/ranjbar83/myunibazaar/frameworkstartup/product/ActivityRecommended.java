@@ -60,7 +60,5 @@ public class ActivityRecommended extends AppCompatActivity {
         DatabaseProductList.getRecommendedProducts(id);
         AdapterProductList adapter = new AdapterProductList(this, G.arrayListProduct);
         listProducts.setAdapter(adapter);
-
-
     }
 }

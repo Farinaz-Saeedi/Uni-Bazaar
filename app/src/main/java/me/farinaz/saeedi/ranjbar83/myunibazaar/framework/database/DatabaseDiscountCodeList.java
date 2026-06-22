@@ -35,8 +35,6 @@ public class DatabaseDiscountCodeList extends SQLiteOpenHelper {
     }
 
 
-
-
     public static void getCodeInfo(int userId) {
         G.arrayListDiscountCode.clear();
         Cursor cursor = G.database.rawQuery("SELECT " +
@@ -76,10 +74,6 @@ public class DatabaseDiscountCodeList extends SQLiteOpenHelper {
         }
 
         cursor.close();
-
-//    for (int i = 0; i < G.arrayListDiscountCode.size(); i++) {
-//      Log.i("FSR", "getData: "+G.arrayListDiscountCode.get(i).getCodId() + " "+G.arrayListDiscountCode.get(i).getScope()+ " "+G.arrayListDiscountCode.get(i).getAmount());
-//    }
 
     }
 }

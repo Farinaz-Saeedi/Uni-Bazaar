@@ -18,7 +18,6 @@ public class DatabaseSupportOperationList extends SQLiteOpenHelper {
     private static final String COL_SUPPORT_BADGE_PERCENT = "total_badges_percentage";
 
 
-
     public DatabaseSupportOperationList(Context context) {
         super(context, G.DB_DIR + G.DATABASE_NAME, null, DB_VERSION);
     }
@@ -35,9 +34,6 @@ public class DatabaseSupportOperationList extends SQLiteOpenHelper {
         if (newVersion == 3) {
         }
     }
-
-
-
 
 
     public static float getOperationPercent(int supportCode) {
@@ -84,11 +80,6 @@ public class DatabaseSupportOperationList extends SQLiteOpenHelper {
         }
 
         cursor.close();
-
-//        for (int i = 0; i < G.arrayListSupportOperation.size(); i++) {
-//            Log.i("FSR", "getData: "+ G.arrayListSupportOperation.get(i).getSupportPercentOperation());
-//        }
-
         return operationPercent;
     }
 
@@ -116,11 +107,6 @@ public class DatabaseSupportOperationList extends SQLiteOpenHelper {
         }
 
         cursor.close();
-
-//        for (int i = 0; i < G.arrayListSupportOperation.size(); i++) {
-//            Log.i("FSR", "getData: "+ G.arrayListSupportOperation.get(i).getSupportPercentStore());
-//        }
-
         return storePercent;
     }
 
@@ -148,11 +134,6 @@ public class DatabaseSupportOperationList extends SQLiteOpenHelper {
         }
 
         cursor.close();
-
-//        for (int i = 0; i < G.arrayListSupportOperation.size(); i++) {
-//            Log.i("FSR", "getData: "+ G.arrayListSupportOperation.get(i).getSupportPercentDiscount() );
-//        }
-
         return codePercent;
     }
 
@@ -178,11 +159,6 @@ public class DatabaseSupportOperationList extends SQLiteOpenHelper {
         }
 
         cursor.close();
-
-//        for (int i = 0; i < G.arrayListSupportOperation.size(); i++) {
-//            Log.i("FSR", "getData: "+ G.arrayListSupportOperation.get(i).getSupportPercentBadge());
-//        }
-
         return badgePercent;
     }
 

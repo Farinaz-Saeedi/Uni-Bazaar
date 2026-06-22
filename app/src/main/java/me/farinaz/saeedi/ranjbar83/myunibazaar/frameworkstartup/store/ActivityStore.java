@@ -61,7 +61,5 @@ public class ActivityStore extends AppCompatActivity {
         DatabaseStoreList.getStoreInfo(id);
         AdapterStoreList adapter = new AdapterStoreList(this, G.arrayListStore);
         listStore.setAdapter(adapter);
-
-
     }
 }

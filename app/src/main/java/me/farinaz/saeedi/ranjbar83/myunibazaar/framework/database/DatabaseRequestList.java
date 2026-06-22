@@ -35,7 +35,6 @@ public class DatabaseRequestList extends SQLiteOpenHelper {
     }
 
 
-
     public static void getData(int userId) {
         G.arrayListRequest.clear();
 
@@ -62,11 +61,5 @@ public class DatabaseRequestList extends SQLiteOpenHelper {
         }
 
         cursor.close();
-
-//    for (int i = 0; i < G.arrayListRequest.size(); i++) {
-//      Log.i("FSR", "getData: "+G.arrayListRequest.get(i).getStoreName() + " " + G.arrayListRequest.get(i).getDate() + " " +G.arrayListRequest.get(i).getDescretiption());
-//    }
-
-
     }
 }

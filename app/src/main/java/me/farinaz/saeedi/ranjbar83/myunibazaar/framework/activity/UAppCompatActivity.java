@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import me.farinaz.saeedi.ranjbar83.myunibazaar.framework.core.G;
 
 
-
 public class UAppCompatActivity extends AppCompatActivity {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState, @Nullable PersistableBundle persistentState) {

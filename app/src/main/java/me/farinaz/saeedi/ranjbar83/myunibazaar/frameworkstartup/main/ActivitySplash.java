@@ -155,9 +155,6 @@ public class ActivitySplash extends AppCompatActivity {
 
     }
 
-
-
-
     private void introActivity() {
         Handler btn_handler = new Handler();
         btn_handler.postDelayed(new Runnable() {

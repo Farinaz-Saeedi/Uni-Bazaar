@@ -59,7 +59,5 @@ public class ActivityRequest extends AppCompatActivity {
         DatabaseRequestList.getData(id);
         AdapterRequestList adapter = new AdapterRequestList(this, G.arrayListRequest);
         listRequests.setAdapter(adapter);
-
-
     }
 }

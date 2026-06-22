@@ -11,7 +11,6 @@ import me.farinaz.saeedi.ranjbar83.myunibazaar.R;
 import java.util.ArrayList;
 
 
-
 public abstract class ActivityRequestList<T> extends ArrayAdapter<T> {
     private LayoutInflater inflater;
 
@@ -41,7 +40,6 @@ public abstract class ActivityRequestList<T> extends ArrayAdapter<T> {
         }
 
         fill(viewHolder, item);
-
         return convertView;
     }
 }

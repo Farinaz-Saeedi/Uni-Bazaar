@@ -37,8 +37,6 @@ public class DatabaseUserList extends SQLiteOpenHelper {
         }
     }
 
-
-
     public static void getData() {
         G.arrayListUser.clear();
         Cursor cursor = G.database.rawQuery("SELECT * FROM " + TABLE_NAME_USER + " ORDER BY "+COL_USER_ID +" ASC", null);
@@ -55,11 +53,6 @@ public class DatabaseUserList extends SQLiteOpenHelper {
             G.arrayListUser.add(data);
         }
         cursor.close();
-
-//    for (int i = 0; i < G.arrayListUser.size(); i++) {
-//      Log.i("FSR", "getData: "+G.arrayListUser.get(i).getUserId() + " "+G.arrayListUser.get(i).getFirsName()+ " "+G.arrayListUser.get(i).getLastName()+ " "+G.arrayListUser.get(i).getImage()
-//      + " " + G.arrayListUser.get(i).getEmail());
-//    }
 
     }
 

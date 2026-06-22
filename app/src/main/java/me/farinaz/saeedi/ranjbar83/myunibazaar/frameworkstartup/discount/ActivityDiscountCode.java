@@ -61,7 +61,5 @@ public class ActivityDiscountCode extends AppCompatActivity {
         DatabaseDiscountCodeList.getCodeInfo(id);
         AdapterDiscountCodeList adapter = new AdapterDiscountCodeList(this, G.arrayListDiscountCode);
         listCode.setAdapter(adapter);
-
-
     }
 }

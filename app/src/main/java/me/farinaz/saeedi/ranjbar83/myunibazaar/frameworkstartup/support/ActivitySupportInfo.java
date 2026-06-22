@@ -167,7 +167,5 @@ public class ActivitySupportInfo extends AppCompatActivity {
         txtPercent2.setText((int)DatabaseSupportOperationList.getStorePercent(code)+"%");
         txtPercent3.setText((int)DatabaseSupportOperationList.getBadgePercent(code)+"%");
         txtPercent4.setText((int)DatabaseSupportOperationList.getCodePercent(code)+"%");
-
-
     }
 }

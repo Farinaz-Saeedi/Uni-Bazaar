@@ -62,8 +62,5 @@ public class ActivityAbout extends AppCompatActivity {
                 onBackPressed();
             }
         });
-
-
-
     }
 }

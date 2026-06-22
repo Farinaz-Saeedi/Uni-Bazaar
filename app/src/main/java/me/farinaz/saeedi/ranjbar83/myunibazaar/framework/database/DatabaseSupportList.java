@@ -61,10 +61,6 @@ public class DatabaseSupportList extends SQLiteOpenHelper {
 
         cursor.close();
 
-//    for (int i = 0; i < G.arrayListSupport.size(); i++) {
-//      Log.i("FSR", "getData: "+ G.arrayListSupport.get(i).getImage() + " " + G.arrayListSupport.get(i).getFirsName() + " " + G.arrayListSupport.get(i).getLastName());
-//    }
-
     }
 
 }

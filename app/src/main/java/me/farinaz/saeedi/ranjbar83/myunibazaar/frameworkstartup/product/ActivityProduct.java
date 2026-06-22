@@ -60,7 +60,5 @@ public class ActivityProduct extends AppCompatActivity {
         DatabaseProductList.getViewedProducts(id);
         AdapterProductList adapter = new AdapterProductList(this, G.arrayListProduct);
         listProducts.setAdapter(adapter);
-
-
     }
 }

@@ -35,8 +35,6 @@ public class ActivityUserInfo extends AppCompatActivity {
     private String phone;
     private String image;
 
-
-
     private ImageView imgInfo;
     private TextView txtName;
     private TextView txtEmail;
@@ -88,7 +86,6 @@ public class ActivityUserInfo extends AppCompatActivity {
         cardSellers = findViewById(R.id.card_sellers);
         cardStore = findViewById(R.id.card_store);
         cardRecomm = findViewById(R.id.card_recomm);
-
 
 
         Intent intent = getIntent();
@@ -198,8 +195,5 @@ public class ActivityUserInfo extends AppCompatActivity {
                 ActivityUserInfo.this.startActivity(intentIntroduction);
             }
         });
-
-
-
     }
 }
