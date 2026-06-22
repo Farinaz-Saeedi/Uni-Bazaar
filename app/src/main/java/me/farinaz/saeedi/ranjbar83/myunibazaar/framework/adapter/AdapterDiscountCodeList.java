@@ -7,7 +7,7 @@ import android.widget.TextView;
 import me.farinaz.saeedi.ranjbar83.myunibazaar.R;
 import me.farinaz.saeedi.ranjbar83.myunibazaar.framework.core.G;
 import me.farinaz.saeedi.ranjbar83.myunibazaar.framework.struct.DiscountCode;
-import me.farinaz.saeedi.ranjbar83.myunibazaar.frameworkstartup.dicount.ActivityDiscountCodeList;
+import me.farinaz.saeedi.ranjbar83.myunibazaar.frameworkstartup.discount.ActivityDiscountCodeList;
 
 import java.util.ArrayList;
 
