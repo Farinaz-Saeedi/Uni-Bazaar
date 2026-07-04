@@ -30,9 +30,14 @@ An Android marketplace application built with <b>Java</b> and <b>SQLite</b>, dev
 ---
 
 <h1 id="demo">🎬 Demo</h1>
+The repository includes:
+
+- 🎥 [Demo Video](demo/video/)
+- 🖼️ [Application Screenshots](demo/screenshots/)
+- 🎞️ [Animated Preview](demo/video/)
 
 <p align="center">
-  <img src="demo/video/demo.gif" width="500">
+  <img src="demo/video/demo.gif" alt="Demo" height="650">
 </p>
 
 ---
