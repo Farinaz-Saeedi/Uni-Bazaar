@@ -32,7 +32,7 @@ An Android marketplace application built with <b>Java</b> and <b>SQLite</b>, dev
 <h1 id="demo">🎬 Demo</h1>
 
 <p align="center">
-  <img src="demo/video/demo.gif" width="900">
+  <img src="demo/video/demo.gif" width="500">
 </p>
 
 ---
