@@ -1,87 +1,158 @@
-# 🛍️ Uni-Bazaar
+<h1 align="center">🛍️ Uni-Bazaar</h1>
 
-A small Android marketplace application developed as a Database Course Project.
+<p align="center">
+An Android marketplace application built with <b>Java</b> and <b>SQLite</b>, developed as a university Database course project.
+</p>
 
-## 🎬 Demo
+<p align="center">
+  <img src="https://img.shields.io/badge/Android-Platform-3DDC84?style=for-the-badge&logo=android&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=openjdk"/>
+  <img src="https://img.shields.io/badge/SQLite-Database-003B57?style=for-the-badge&logo=sqlite"/>
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge"/>
+</p>
 
-![Application Demo](demo/video/demo.gif)
+<p align="center">
 
----
+<a href="apk/uni_bazaar.apk">
+<img src="https://img.shields.io/badge/⬇️_Download_APK-3DDC84?style=for-the-badge"/>
+</a>
 
-## 📖 Overview
+<a href="#demo">
+<img src="https://img.shields.io/badge/🎬_Demo-4285F4?style=for-the-badge"/>
+</a>
 
-Uni Bazaar is a small Android marketplace application developed as a Database course project. The application simulates a marketplace environment with users, support staff, products, stores, discount codes, and requests. All application data is stored locally using SQLite.
+<a href="#database-design">
+<img src="https://img.shields.io/badge/🗄️_EER_Diagram-FF9800?style=for-the-badge"/>
+</a>
 
----
-
-## 🗄️ Database Design
-
-The database was designed using an Enhanced Entity-Relationship (EER) model before implementation and then implemented using SQLite.
-
-The EER diagram is included in the project documentation.
-
----
-
-## ✨ Features
-
-### 👤 User Features
-
-Each user contains:
-
-* 🎟️ Discount Codes
-* 📝 Store Requests
-* 👀 Recently Viewed Products
-* 🔥 Best-Selling Products
-* 🎯 Recommended Products
-* 🏪 Purchased Stores
-
-Fraudulent stores are marked with a dedicated scam badge...
-
-Clicking on each section displays a detailed list of related records.
-
-### 🛠️ Support Staff Features
-
-Each support member includes:
-
-* 📊 Operational Performance
-* ✅ Verified Stores Percentage
-* 🏅 Awarded Badges
-* 🎁 Generated Discount Codes
-
-Performance statistics are visualized using custom circular progress bars.
+</p>
 
 ---
 
-## 🧰 Technologies Used
+<h1 id="demo">🎬 Demo</h1>
 
-* ☕ Java
-* 📱 Android SDK
-* 🗃️ SQLite
-* 🛠️ Android Studio
-* 🎨 Custom Views
-* 📐 Material Design Components
+<p align="center">
+  <img src="demo/video/demo.gif" width="900">
+</p>
 
 ---
 
-## 🏗️ Project Structure
+# 📥 Download
 
-* Activities
-* Adapters
-* Database Layer
-* Models
-* Helper Classes
-* Custom Widgets
+Download the latest APK and try the application on your Android device.
 
----
+> 📱 **[Download Uni-Bazaar APK](apk/uni_bazaar.apk)**
 
-## 📸 Screenshots & Demo
-
-Screenshots and a full demonstration video of the application are available in the `demo/` directory, including all main features and user flows of the app.
+> **Note**
+>
+> This repository currently provides a **Debug APK** intended for demonstration and educational purposes.
 
 ---
 
-## 🎓 Educational Purpose
+# 📖 Overview
 
-This project was developed for educational purposes as part of a university Database course and focuses on database design and Android application development.
+Uni-Bazaar is a local Android marketplace application that demonstrates the practical implementation of relational database concepts in an Android application.
 
-*Feel free to explore the project and enjoy the experience 😊*
+The project was developed as part of a university **Database** course. The database was first designed using an **Enhanced Entity-Relationship (EER)** model and then implemented locally using **SQLite**.
+
+The application manages users, support staff, stores, products, discount codes, purchase history, recommendations, and marketplace requests entirely on-device without relying on external servers.
+
+---
+
+# ✨ Features
+
+## 👤 User Module
+
+Users can:
+
+- 🎟️ Manage discount codes
+- 📝 Submit store requests
+- 👀 View recently visited products
+- 🔥 Explore best-selling products
+- 🎯 Receive personalized recommendations
+- 🏪 Access purchased stores
+- 🚨 Identify fraudulent stores through dedicated scam badges
+
+---
+
+## 🛠️ Support Module
+
+Support staff can:
+
+- 📊 Monitor operational performance
+- ✅ View verified store statistics
+- 🎁 Generate discount codes
+- 🏅 Give achievement badges
+- 📈 Track performance using custom circular progress indicators
+
+---
+
+<h1 id="database-design">🗄️ Database Design</h1>
+
+The application database was designed following a complete database development workflow:
+
+- Enhanced Entity-Relationship (EER) Modeling
+- Relational Database Design
+- SQLite Implementation
+
+The complete EER diagram is shown below.
+
+<p align="center">
+  <img src="docs/EER.png" width="900">
+</p>
+
+---
+
+# 🧰 Tech Stack
+
+- ☕ Java
+- 📱 Android SDK
+- 🗃️ SQLite
+- 🛠️ Android Studio
+- 🎨 Material Design Components
+- 📊 Custom Views
+
+---
+
+# 📂 Project Structure
+
+```text
+app/
+├── activities/
+├── adapters/
+├── database/
+├── helpers/
+├── models/
+├── widgets/
+└── res/
+
+apk/
+demo/
+docs/
+README.md
+```
+
+The project follows a modular architecture by separating UI components, database operations, models, adapters, and helper classes.
+
+---
+
+# 🚀 Future Improvements
+
+- 🔐 User Authentication
+- ☁️ Cloud Database Integration
+- 🔄 Data Synchronization
+- 🔍 Product Search & Filtering
+- 🌙 Dark Mode
+- 🔔 Push Notifications
+
+---
+
+# 🎓 Educational Purpose
+
+This project was developed for educational purposes as part of a university Database course and focuses on combining database design principles with Android application development in a practical marketplace application.
+
+---
+
+<p align="center">
+<b>⭐ If you found this project useful, consider giving it a star!</b>
+</p>
